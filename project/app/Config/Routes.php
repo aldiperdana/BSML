@@ -38,6 +38,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get("image-upload", "DropzoneController::dropzone");
 $routes->post("dropzone/upload", "DropzoneController::dropzoneStore");
+$routes->get("login", "LoginController::index");
 
 /*
  * --------------------------------------------------------------------
